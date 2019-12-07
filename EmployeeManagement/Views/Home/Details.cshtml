@@ -1,0 +1,60 @@
+﻿@*@model EmployeeManagement.Models.Employee*@
+@model EmployeeManagement.ViewModels.HomeDetailsViewModel
+
+@{
+    Layout = "~/Views/Shared/_layout.cshtml";
+    ViewBag.Title = "Employee Details";
+}
+
+
+<h3> @ViewData["PageTitle"] - View Data </h3>
+@{
+    var employee = ViewData["Employee"] as EmployeeManagement.Models.Employee;
+}
+
+<div>
+    Name: @employee.Name
+</div>
+<div>
+    Email: @employee.Email
+</div>
+<div>
+    Department: @employee.Department
+</div><br />
+
+<h3> @ViewBag.PageTitle - View Bag</h3>
+<div>
+    Name: @ViewBag.Employee.Name
+</div>
+<div>
+    Email: @ViewBag.Employee.Email
+</div>
+<div>
+    Department: @ViewBag.Employee.Department
+</div><br />
+
+@*<h3> Employee Details - Model View </h3>
+    <div>
+        Name: @Model.Name
+    </div>
+    <div>
+        Email: @Model.Email
+    </div>
+    <div>
+        Department: @Model.Department
+    </div>*@
+
+<h3> @Model.PageTitle - using strongly typed views </h3>
+<div>
+    Name: @Model.Employee.Name
+</div>
+<div>
+    Email: @Model.Employee.Email
+</div>
+<div>
+    Department: @Model.Employee.Department
+</div>
+
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
+}
