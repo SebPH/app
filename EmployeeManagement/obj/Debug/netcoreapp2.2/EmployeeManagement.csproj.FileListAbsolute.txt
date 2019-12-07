@@ -28,3 +28,4 @@ C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Test\Update.cshtml.g.cs
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
