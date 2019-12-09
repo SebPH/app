@@ -84,12 +84,19 @@ namespace EmployeeManagement
              
             // Order by which middleware is called
             app.UseStaticFiles();
-            app.UseMvcWithDefaultRoute();
 
-            app.Run(async (context) =>
+            //app.UseMvcWithDefaultRoute();
+
+            // using conventional routing (if using route attributes - then comment this part out or you can use both for more flexibility)
+            app.UseMvc(routes =>
             {
-                await context.Response.WriteAsync("Hosting Environment " + env.EnvironmentName);
+                routes.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
+
+            //app.Run(async (context) =>
+            //{
+            //    await context.Response.WriteAsync("Hosting Environment " + env.EnvironmentName);
+            //});
 
         }
     }

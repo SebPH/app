@@ -4,8 +4,7 @@
     ViewBag.Title = "Employee List";
 }
 
-
-<table>
+@*<table>
     <thead>
         <tr>
             <th> ID </th>
@@ -25,7 +24,24 @@
             </tr>
         }
     </tbody>
-</table>
+</table>*@
+
+<div class="card-deck">
+    @foreach (var employee in Model)
+    {
+        <div class="card m-3">
+            <div class="card-header">
+                <h3> @employee.Name </h3>
+            </div>
+            <img class="card-img-top" src="~/images/blankimage.jpg" />
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary"> View </a>
+                <a href="#" class="btn btn-primary"> Edit </a>
+                <a href="#" class="btn btn-danger"> Delete </a>
+            </div>
+        </div>
+    }
+</div>
 
 @section Scripts {
     <script src="~/js/CustomScript.js"></script>

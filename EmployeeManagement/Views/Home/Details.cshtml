@@ -6,12 +6,11 @@
     ViewBag.Title = "Employee Details";
 }
 
-
-<h3> @ViewData["PageTitle"] - View Data </h3>
 @{
     var employee = ViewData["Employee"] as EmployeeManagement.Models.Employee;
 }
 
+@*<h3> @ViewData["PageTitle"] - View Data </h3>
 <div>
     Name: @employee.Name
 </div>
@@ -31,7 +30,7 @@
 </div>
 <div>
     Department: @ViewBag.Employee.Department
-</div><br />
+</div><br />*@
 
 @*<h3> Employee Details - Model View </h3>
     <div>
@@ -44,7 +43,7 @@
         Department: @Model.Department
     </div>*@
 
-<h3> @Model.PageTitle - using strongly typed views </h3>
+@*<h3> @Model.PageTitle - using strongly typed views </h3>
 <div>
     Name: @Model.Employee.Name
 </div>
@@ -53,6 +52,28 @@
 </div>
 <div>
     Department: @Model.Employee.Department
+</div>*@
+
+<h3> @Model.PageTitle </h3>
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1> @employee.Name  </h1>
+            </div>
+            <div class="card-body text-center">
+                <img class="card-img-top" src="~/images/blankimage.jpg" />
+                <h4> EmployeeId: @employee.Id </h4>
+                <h4> Email: @employee.Email </h4>
+                <h4> Department: @employee.Department </h4>
+            </div>
+            <div class="card-footer text-center">
+                <a href="#" class="btn btn-primary"> View </a>
+                <a href="#" class="btn btn-primary"> Edit </a>
+                <a href="#" class="btn btn-danger"> Delete </a>
+            </div>
+        </div>
+    </div>
 </div>
 
 @section Scripts {

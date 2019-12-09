@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace EmployeeManagement.Controllers
 {
+    //[Route("[controller]/[action]")
     public class HomeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -14,6 +15,9 @@ namespace EmployeeManagement.Controllers
             _employeeRepository = employeeRepository;
         }
 
+        //[Route("")]
+        //[Route("[action]")
+        //[Route("~/home")
         // this is the homepage https://localhost:port/
         public ViewResult Index()
         {
@@ -23,8 +27,9 @@ namespace EmployeeManagement.Controllers
             return View(model);
         }
 
+        //[Route("[action]/{id?}")
         // this is the details page:  https://localhost:port/home/details
-        public ViewResult Details()
+        public ViewResult Details(int id)
         {
             Employee model = _employeeRepository.GetEmployee(1);
 
@@ -40,7 +45,7 @@ namespace EmployeeManagement.Controllers
             // Using ViewModels
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(1),
+                Employee = _employeeRepository.GetEmployee(id),
                 PageTitle = "Employee Details"
             };
 
