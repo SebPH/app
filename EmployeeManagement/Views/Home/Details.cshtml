@@ -3,12 +3,13 @@
 
 @{
     //Layout = "null";
-    ViewBag.Title = "Employee Details";
+    //ViewBag.Title = "Employee Details";
 }
 
-@{
+@*@{
     var employee = ViewData["Employee"] as EmployeeManagement.Models.Employee;
-}
+}*@
+
 
 @*<h3> @ViewData["PageTitle"] - View Data </h3>
 <div>
@@ -59,16 +60,16 @@
     <div class="col-sm-8">
         <div class="card">
             <div class="card-header">
-                <h1> @employee.Name  </h1>
+                <h1> @Model.Employee.Name  </h1>
             </div>
             <div class="card-body text-center">
-                <img class="card-img-top" src="~/images/blankimage.jpg" />
-                <h4> EmployeeId: @employee.Id </h4>
-                <h4> Email: @employee.Email </h4>
-                <h4> Department: @employee.Department </h4>
+                <img class="card-img-top" src="~/images/blankimage.jpg" asp-append-version="true"/>
+                <h4> EmployeeId: @Model.Employee.Id </h4>
+                <h4> Email: @Model.Employee.Email </h4>
+                <h4> Department: @Model.Employee.Department </h4>
             </div>
             <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary"> View </a>
+                <a asp-controller="home" asp-action="index" class="btn btn-primary"> Back </a>
                 <a href="#" class="btn btn-primary"> Edit </a>
                 <a href="#" class="btn btn-danger"> Delete </a>
             </div>

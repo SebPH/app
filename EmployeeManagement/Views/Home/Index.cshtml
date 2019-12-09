@@ -1,8 +1,8 @@
 ﻿@model IEnumerable<Employee>
 
-@{
-    ViewBag.Title = "Employee List";
-}
+@*@{
+    ViewBag.PageTitle = "employee list";
+}*@
 
 @*<table>
     <thead>
@@ -33,11 +33,20 @@
             <div class="card-header">
                 <h3> @employee.Name </h3>
             </div>
-            <img class="card-img-top" src="~/images/blankimage.jpg" />
+            <img class="card-img-top" src="~/images/blankimage.jpg" asp-append-version="true"/>
             <div class="card-footer text-center">
-                <a href="#" class="btn btn-primary"> View </a>
-                <a href="#" class="btn btn-primary"> Edit </a>
-                <a href="#" class="btn btn-danger"> Delete </a>
+                <!-- using tag helper-->
+                <a asp-controller="home" asp-action="details" asp-route-id="@employee.Id" class="btn btn-primary m-1"> View </a>
+
+                <!-- using action methods -->
+                @*<a href="@Url.Action("details", "home", new { id = employee.Id })" class="btn btn-primary"> ViewByUrlAction </a>
+                @Html.ActionLink("ViewByActionLink", "details", "home", new { id = employee.Id })*@
+
+                <!-- using direct path-->
+                @*<a href="/home/details/@employee.Id" class="btn btn-primary"> ViewByPath </a>*@
+
+                <a href="#" class="btn btn-primary m-1"> Edit </a>
+                <a href="#" class="btn btn-danger m-1"> Delete </a>
             </div>
         </div>
     }

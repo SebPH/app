@@ -29,13 +29,13 @@ namespace EmployeeManagement.Controllers
 
         //[Route("[action]/{id?}")
         // this is the details page:  https://localhost:port/home/details
-        public ViewResult Details(int id)
+        public ViewResult Details(int id = 1)
         {
-            Employee model = _employeeRepository.GetEmployee(1);
+            Employee model = _employeeRepository.GetEmployee(id);
 
             // View Data - Loosely typed - uses string keys to store and retrieve data
-            ViewData["Employee"] = model;
-            ViewData["PageTitle"] = "EmployeeDetails";
+            //ViewData["Employee"] = model;
+            //ViewData["PageTitle"] = "EmployeeDetails";
 
             // View Bag - Loosely typed - uses dynamic properties to store and retrieve data
             // View Bag is actually a wrapper around ViewData
@@ -52,6 +52,16 @@ namespace EmployeeManagement.Controllers
             //return View();
             //return View(model);
             return View(homeDetailsViewModel);
+        }
+
+        public ViewResult Create()
+        {
+            return View();
+        }
+
+        public ViewResult Test()
+        {
+            return View();
         }
 
     }
