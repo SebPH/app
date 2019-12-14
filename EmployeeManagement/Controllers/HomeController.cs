@@ -29,9 +29,9 @@ namespace EmployeeManagement.Controllers
 
         //[Route("[action]/{id?}")
         // this is the details page:  https://localhost:port/home/details
-        public ViewResult Details(int id = 1)
+        public ViewResult Details(int? id)
         {
-            Employee model = _employeeRepository.GetEmployee(id);
+            Employee model = _employeeRepository.GetEmployee(id ?? 1);
 
             // View Data - Loosely typed - uses string keys to store and retrieve data
             //ViewData["Employee"] = model;
@@ -45,7 +45,7 @@ namespace EmployeeManagement.Controllers
             // Using ViewModels
             HomeDetailsViewModel homeDetailsViewModel = new HomeDetailsViewModel()
             {
-                Employee = _employeeRepository.GetEmployee(id),
+                Employee = _employeeRepository.GetEmployee(id ?? 1),
                 PageTitle = "Employee Details"
             };
 
@@ -54,8 +54,20 @@ namespace EmployeeManagement.Controllers
             return View(homeDetailsViewModel);
         }
 
+        [HttpGet]
         public ViewResult Create()
         {
+            return View();
+        }
+        
+        [HttpPost]
+        public IActionResult Create(Employee employee)
+        {
+            if (ModelState.IsValid)
+            {
+                Employee newEmployee = _employeeRepository.Add(employee);
+                return RedirectToAction("details", new { id = newEmployee.Id });
+            }
             return View();
         }
 

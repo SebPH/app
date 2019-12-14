@@ -29,5 +29,12 @@ namespace EmployeeManagement.Models
             /*Func<Employee, bool> operation = e => e.Id == Id*/;
             return _employeeList.FirstOrDefault(e => e.Id == Id);
         }
+        
+        public Employee Add(Employee employee)
+        {
+            employee.Id = _employeeList.Max(e => e.Id) + 1;
+            _employeeList.Add(employee);
+            return employee;
+        }
     }
 }
