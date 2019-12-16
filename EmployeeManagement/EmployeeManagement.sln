@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29409.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement", "EmployeeManagement.csproj", "{6D2AD1D6-C6B3-4E19-BDFC-D41B702167D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeManagement", "EmployeeManagement.csproj", "{6D2AD1D6-C6B3-4E19-BDFC-D41B702167D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmployeeManagement.DataAccess", "..\EmployeeManagement.DataAccess\EmployeeManagement.DataAccess.csproj", "{2C3BF174-23DD-4320-BCA3-2796B4A3BDA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{6D2AD1D6-C6B3-4E19-BDFC-D41B702167D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D2AD1D6-C6B3-4E19-BDFC-D41B702167D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D2AD1D6-C6B3-4E19-BDFC-D41B702167D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3BF174-23DD-4320-BCA3-2796B4A3BDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3BF174-23DD-4320-BCA3-2796B4A3BDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3BF174-23DD-4320-BCA3-2796B4A3BDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3BF174-23DD-4320-BCA3-2796B4A3BDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
