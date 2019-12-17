@@ -1,4 +1,3 @@
-C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cache
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.RazorAssemblyInfo.cs
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.AssemblyInfoInputs.cache
@@ -33,3 +32,4 @@ C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\bin\Debug\netcoreapp2.2\libman.json
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.cshtml.g.cs
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
