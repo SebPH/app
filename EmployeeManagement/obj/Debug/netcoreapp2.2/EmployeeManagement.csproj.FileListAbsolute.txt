@@ -33,3 +33,7 @@ C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\bin\Debug\netcoreapp2.2\libman.json
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\Create.cshtml.g.cs
 C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\EmployeeManagement.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\edit.cshtml.g.cs
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Home\EmployeeNotFound.cshtml.g.cs
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\Sebastian\Desktop\app\EmployeeManagement\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs

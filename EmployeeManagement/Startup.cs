@@ -48,18 +48,32 @@ namespace EmployeeManagement
             else if (env.IsStaging())
             {
                 Console.WriteLine("You're using staging environment!");
-                app.UseExceptionHandler("/Error - Staging");
+                //app.UseExceptionHandler("/Error - Staging");
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
             else if (env.IsProduction())
             {
                 Console.WriteLine("You're using production environment!");
-                app.UseExceptionHandler("/Error - Production");
+                app.UseExceptionHandler("/Error");
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
-            else if (env.IsEnvironment("UAT"))
+            else if (env.IsEnvironment("uat"))
             {
                 // this is for custom environment
-                Console.WriteLine("You're using a custom environment - UAT");
-                app.UseExceptionHandler("/Error - UAT");
+                Console.WriteLine("You're using a custom environment - uat");
+                //app.UseExceptionHandler("/Error - uat");
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+            }
+            else if (env.IsEnvironment("test"))
+            {
+                // this is for custom environment
+                Console.WriteLine("You're using a custom environment - test");
+                //app.UseExceptionHandler("/Error - test");
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
             }
 
             // uses lambda expressions, extension methods, delegates, anonymous methods
@@ -91,7 +105,7 @@ namespace EmployeeManagement
             //app.UseDefaultFiles(defaultFilesOptions);
             //app.UseStaticFiles();
             //app.UseFileServer(fileServerOptions);
-             
+
             // Order by which middleware is called
             app.UseStaticFiles();
 
