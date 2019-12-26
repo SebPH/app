@@ -1,0 +1,17 @@
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\AutomationDashboard.deps.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\AutomationDashboard.runtimeconfig.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\AutomationDashboard.runtimeconfig.dev.json
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\AutomationDashboard.dll
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.RazorAssemblyInfo.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.RazorAssemblyInfo.cs
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.AssemblyInfo.cs
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.RazorTargetAssemblyInfo.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\TechTalk.SpecFlow.NUnit.SpecFlowPlugin.dll
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\bin\Debug\netcoreapp2.2\AutomationDashboard.pdb
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.dll
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp2.2\AutomationDashboard.pdb
