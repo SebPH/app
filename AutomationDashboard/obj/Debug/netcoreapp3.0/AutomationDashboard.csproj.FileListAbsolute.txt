@@ -1,0 +1,8 @@
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.csprojAssemblyReference.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.AssemblyInfoInputs.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.AssemblyInfo.cs
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.TagHelpers.input.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.TagHelpers.output.cache
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.dll
+C:\Users\Sebastian\Desktop\App\AutomationDashboard\obj\Debug\netcoreapp3.0\AutomationDashboard.pdb
